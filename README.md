@@ -24,7 +24,7 @@ For a neural network to predict on text data, it first has to be turned into dat
 
 Different models are tested on this simple encryption case.
 - Simple RNN cells.
-- One layer LSTM (Long-Short-Time-Memory)
+- One layer LSTM (Long short-term memory). LSTM is a type of recurrent neural network that allows long-term dependencies in a sequence to persist in the network by using "forget" and "update" gates. It is one of the primary architectures for modeling any sequential data generation process.
 - One layer GRU (Gated Recurrent Unit), a simplified, but effective, version of LSTM cell
 
 By default, the output of a RNN layer contains a single vector per input sequence (an encoded sentence). This vector is the RNN cell output capturing what the model identifies as important information from the input sequence. This vector corresponds to the last timestep (of the sequence), containing information about the entire input sequence. The shape of this output is (batch_size, units) where units corresponds to the units argument passed to the layer's constructor.
